@@ -1,0 +1,26 @@
+## Profiles Properites
+my:
+  message: From Default Message
+  code: From Default Code
+  mode: From Default Mode
+  
+spring:
+  profiles:
+    active: dev
+--- 
+   
+spring:      
+  profiles: qa
+
+my:
+  message: From QA Message
+  mode: From QA Mode
+  
+---
+
+spring:
+  profiles: dev
+  
+my:
+  code: From Dev Code
+  mode: From Dev mode     
